@@ -1,0 +1,63 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+  <main>
+    <h1>Exploring Amazing Topics</h1>
+    <p>Welcome to my page! Here I’ll share three interesting subjects, each with a short introduction and a video you can watch to learn more.</p>
+
+    <section>
+      <h2>Technology</h2>
+      <p>Technology is constantly evolving, shaping the way we live and work every day.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID1" 
+        title="Technology Video" 
+        width="560" 
+        height="315" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Science</h2>
+      <p>Science helps us understand the world around us, from the smallest particles to the vast universe.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID2" 
+        title="Science Video" 
+        width="560" 
+        height="315" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Art</h2>
+      <p>Art inspires creativity and expression, connecting people across cultures and generations.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/VIDEO_ID3" 
+        title="Art Video" 
+        width="560" 
+        height="315" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+      </iframe>
+    </section>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
