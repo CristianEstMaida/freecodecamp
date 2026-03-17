@@ -1,0 +1,98 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="styles.css">
+    <title>House Painting</title>
+</head>
+<body>
+<div id="house">
+  <div id="chimney"></div>
+  <div id="roof"></div>
+  <div id="window-1"></div>
+  <div id="window-2"></div>
+  <div id="door"></div>
+</div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* House container */
+#house {
+  position: relative;       /* children positioned relative to house */
+  width: 500px;
+  height: 400px;
+  background-color: #f5deb3; /* light tan wall color */
+  border: 3px solid #000;   /* outline for the house */
+}
+
+/* All immediate children positioned absolutely */
+#house > div {
+  position: absolute;
+  border: 2px solid #000;
+  background-color: #ccc;   /* default fill, overridden below */
+}
+
+/* Roof */
+#roof {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #8b0000;
+  border: 3px solid #000;   /* border all around */
+}
+
+
+/* Window 1 */
+#window-1 {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 60px;
+  height: 60px;
+  background-color: #87ceeb;   /* sky blue window */
+  border: 2px solid #000;      /* border applied */
+}
+
+/* Window 2 */
+#window-2 {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  width: 60px;
+  height: 60px;
+  background-color: #87ceeb;
+  border: 2px solid #000;      /* border applied */
+}
+
+/* Door */
+#door {
+  position: absolute;
+  bottom: 0;                   /* placed at bottom of house */
+  left: 220px;
+  width: 60px;
+  height: 120px;
+  background-color: #654321;   /* brown door */
+  border: 2px solid #000;      /* border applied */
+}
+#chimney {
+  position: absolute;
+  top: -120px;               /* bottom flush with top of house */
+  left: 350px;
+  width: 40px;
+  height: 120px;
+  background-color: #555;
+  border: 2px solid #000;
+  z-index: -1;               /* behind the house */
+}
+
+
+** end of styles.css **
+

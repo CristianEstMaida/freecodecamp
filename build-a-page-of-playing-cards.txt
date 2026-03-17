@@ -1,0 +1,100 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<main id="playing-cards">
+    <!-- Card 1 -->
+    <div class="card">
+      <div class="left">♠</div>
+      <div class="middle">
+        <div>♠</div>
+        <div>♠</div>
+      </div>
+      <div class="right">♠</div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card">
+      <div class="left">♥</div>
+      <div class="middle">
+        <div>♥</div>
+        <div>♥</div>
+      </div>
+      <div class="right">♥</div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card">
+      <div class="left">♦</div>
+      <div class="middle">
+        <div>♦</div>
+        <div>♦</div>
+      </div>
+      <div class="right">♦</div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Flex container for all cards */
+    #playing-cards {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px; /* 20px space between cards */
+      margin-top: 40px;
+    }
+
+    /* Each card */
+    .card {
+      display: flex;
+      justify-content: space-between; /* space between left, middle, right */
+      align-items: flex-start;
+      width: 120px;
+      height: 180px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      padding: 10px;
+      background: white;
+      font-size: 24px;
+    }
+
+    /* Left element aligned at start */
+    .left {
+      align-self: flex-start;
+    }
+
+    /* Middle element aligned in center */
+    .middle {
+      align-self: center;
+      display: flex;
+      flex-direction: column; /* children stacked vertically */
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    /* Right element aligned at end */
+    .right {
+      align-self: flex-end;
+    }
+
+
+** end of styles.css **
+

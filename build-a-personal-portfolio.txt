@@ -1,0 +1,92 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a href="#welcome-section">Welcome</a>
+    <a href="#project-section">Projects</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="project-section">
+    <div class="project-tile">
+      <h2>Project 1</h2>
+      <a href="https://example.com" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <!-- Profile Link -->
+  <footer>
+    <a id="profile-link" href="https://github.com/yourusername" target="_blank">
+      My GitHub Profile
+    </a>
+  </footer>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Navbar fixed at top */
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+}
+
+#navbar a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Welcome section full viewport height */
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: lightblue;
+}
+
+/* Projects section styling */
+#project-section {
+  padding: 50px;
+  background: #f4f4f4;
+}
+
+.project-tile {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+/* Media query example */
+@media (max-width: 600px) {
+  #navbar {
+    background-color: darkblue;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+}
+
+
+** end of styles.css **
+
