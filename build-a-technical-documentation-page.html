@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Technical Documentation</title>
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: #f4f4f4;
+      padding: 10px;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    #navbar a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    #main-doc {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    code {
+      display: block;
+      background: #eee;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    /* Media query for smaller screens */
+    @media (max-width: 768px) {
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+  <nav id="navbar">
+    <header>Technical Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>This is the introduction section.</p>
+      <p>It explains the basics of the documentation.</p>
+      <code>console.log("Hello World");</code>
+      <ul>
+        <li>Overview</li>
+        <li>Purpose</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Getting_Started">
+      <header>Getting Started</header>
+      <p>Steps to begin using the documentation.</p>
+      <p>Setup instructions are provided here.</p>
+      <code>npm install</code>
+      <ul>
+        <li>Download</li>
+        <li>Install</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <p>Explains differences between JavaScript and Java.</p>
+      <p>Highlights similarities and differences.</p>
+      <code>let x = 10;</code>
+      <ul>
+        <li>Syntax</li>
+        <li>Use cases</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables store data values.</p>
+      <p>They can be declared using var, let, or const.</p>
+      <code>const name = "Cristian";</code>
+      <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are reusable blocks of code.</p>
+      <p>They can take parameters and return values.</p>
+      <code>function greet() { return "Hi"; }</code>
+      <ul>
+        <li>Declaration</li>
+        <li>Expression</li>
+        <li>Arrow</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

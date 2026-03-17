@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        
+      html {
+        font-size: 24px; /* root font-size */
+      }
+
+      .newspaper {
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .name {
+        font-size: 2rem; /* twice the root font-size */
+        font-family: 'Times New Roman', serif;
+        text-transform: uppercase;
+      }
+
+      .date {
+        font-size: 1em;
+      }
+
+      .headline {
+        font-size: 2em; /* twice its parent element's font-size */
+        font-weight: bold;
+      }
+
+      .sub-headline {
+        font-size: 1.5em; /* 1.5 × parent element's font-size */
+        font-weight: 100;
+        font-style: italic;
+      }
+
+      .author {
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      .text {
+        text-indent: 20px;
+        line-height: 2em; /* twice parent element's font-size */
+      }
+
+      .text::first-letter {
+        font-weight: bold;
+        font-size: 2em; /* twice parent element's font-size */
+      }
+
+    </style>
+    <title>Newspaper Article</title>
+  </head>
+  <body>
+<div class="newspaper">
+    <div class="name">The Daily Chronicle</div>
+    <div class="date">February 27, 2026</div>
+    <div class="headline">Tech Innovations Reshape the Future</div>
+    <div class="sub-headline">How AI and Robotics Are Changing Everyday Life</div>
+    <div class="author">By Cristian Maida</div>
+    <p class="text">Artificial intelligence is rapidly becoming a cornerstone of modern society, influencing industries from healthcare to finance. Its ability to process vast amounts of data allows for smarter decision-making and improved efficiency.</p>
+    <p class="text">Meanwhile, robotics continues to evolve, offering solutions in manufacturing, logistics, and even personal assistance. Together, these technologies are reshaping the way humans interact with the world, promising both opportunities and challenges ahead.</p>
+  </div>
+
+  </body>
+</html>

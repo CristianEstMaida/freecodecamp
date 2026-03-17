@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Selection Feature Page</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .feature-card-container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      label.feature-card {
+        display: block;
+        margin: 8px auto;
+        cursor: pointer;
+        font-size: 18px;
+      }
+
+      /* Custom checkbox styling */
+      input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        border: 2px solid #f1be32;
+        border-radius: 4px;
+        background-color: white;
+        vertical-align: middle;
+        margin: 15px;
+      }
+
+      /* Checked state */
+      input[type="checkbox"]:checked {
+        background-color: #f1be32;
+        border-color: #e2a60d;
+      }
+
+      /* Add checkmark when checked */
+      input[type="checkbox"]:checked::after {
+        content: "✓";
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        line-height: 20px;
+      }
+
+    </style>
+</head>
+
+<body>
+<h1>Feature Selection</h1>
+  
+  <div class="feature-card-container">
+    <label class="feature-card">
+      <input type="checkbox"> Dark Mode
+    </label>
+    <label class="feature-card">
+      <input type="checkbox"> Notifications
+    </label>
+  </div>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+
+
+** end of styles.css **
+
